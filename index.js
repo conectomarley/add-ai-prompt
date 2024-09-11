@@ -1,4 +1,4 @@
-function showAnswer(response) {
+function showPresident(response) {
   alert(response.data.answer);
 }
 
@@ -7,4 +7,4 @@ let context = "provide a very short answer and make sure to pick one";
 let prompt = "who was the first female president in the world";
 let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 console.log("apiUrl");
-axios.get(apiUrl).then(showAnswer);
+axios.get(apiUrl).then(showPresident);
